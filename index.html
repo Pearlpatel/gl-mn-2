@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title>GOOGLE LENS VS MOBILENET APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Fredoka+One&family=Yuji+Mai&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+  <h2 id="head"> GOOGLE LENS VS MOBILENET </h2>
+  <br>
+  <h3> GOOGLE LENS</h3>
+  <br>
+  <label>vs</label>
+  <br>
+  <h3>MOBILENET</h3>
+  <br>
+  <hr>
+  <ol>
+<div id="full_div" class="container">
+    <span class="col-sm-2">
+        <b >Test Image - </b>
+        <img src="https://media.istockphoto.com/photos/water-bottle-on-white-background-picture-id1126933760?k=20&m=1126933760&s=612x612&w=0&h=XiYk9aT68Iru-OeENe1JXi0-8BU8wXKKj7dfgkbjy9A=" class="img-responsive">
+    </span>
+    <span >
+        <b>Ouput On GOOGLE LENS</b> - 
+        <span>Mineral Water Bottle </span>
+    </span>
+    <span >
+        <b>Ouput On MOBILENET</b> - Vacuum ,Chopper
+        <span id="MN_name"></span>
+    </span>
+    <div id="result_div" >
+        <h4> Result -  </h4>
+        <hr>
+        <h4>Google Lens is better.</h4>
+    </div>
+</div>
+<br>
+<br>
+<div id="full_div" class="container">
+    <span class="col-sm-2">
+        <b >Test Image - </b>
+        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LqQX?ver=1f00&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true" class="img-responsive">
+    </span>
+    <span >
+        <b>Ouput On GOOGLE LENS</b> - 
+        <span>electronic device </span>
+    </span>
+    <span >
+        <b>Ouput On MOBILENET</b> - television system,spotlight
+        <span id="MN_name"></span>
+    </span>
+    <div id="result_div" >
+        <h4> Result - </h4>
+        <hr>
+        <h4>Goggle Lens is better.</h4>
+    </div>
+</div>
+<br>
+<br>
+<div id="full_div" class="container">
+    <span class="col-sm-2">
+        <b >Test Image - </b>
+        <img src="https://m.media-amazon.com/images/S/aplus-media/vc/b2d00dc2-c07c-4302-b827-c1e1c48f0f84._CR0,0,300,300_PT0_SX300__.jpg" class="img-responsive">
+    </span>
+    <span >
+        <b>Ouput On GOOGLE LENS</b> - 
+        <span>deodorant spray </span>
+    </span>
+    <span >
+        <b>Ouput On MOBILENET</b> - shovel,lipstick,syringe
+        <span id="MN_name"></span>
+    </span>
+    <div id="result_div" >
+        <h4> Result - </h4>
+        <hr>
+        <h4>Goggle Lens is better.</h4>
+    </div>
+</div>
+<br>
+<br>
+<div id="full_div" class="container">
+    <span class="col-sm-2">
+        <b >Test Image - </b>
+        <img src="https://target.scene7.com/is/image/Target/GUEST_e6b4f362-2612-45cb-a56e-7916c3635b5b?wid=488&hei=488&fmt=pjpeg" class="img-responsive">
+    </span>
+    <span >
+        <b>Ouput On GOOGLE LENS</b> - 
+        <span>nail enamel </span>
+    </span>
+    <span >
+        <b>Ouput On MOBILENET</b> - lipstick,ballpoint pen
+        <span id="MN_name"></span>
+    </span>
+    <div id="result_div" >
+        <h4> Result - </h4>
+        <hr>
+        <h4>Goggle Lens is better.</h4>
+    </div>
+</div>
+<br>
+<br>
+<div id="full_div" class="container">
+    <span class="col-sm-2">
+        <b >Test Image - </b>
+        <img src="https://www.byrdie.com/thmb/C882toL8Gyyd9b28yqZnzlQzj30=/fit-in/1500x1342/filters:no_upscale():max_bytes(150000):strip_icc()/ChicagoCombModel8Anti-staticCarbonComb-b506fc7185974e3b90153537b132113a.jpg" class="img-responsive">
+    </span>
+    <span >
+        <b>Ouput On GOOGLE LENS</b> - 
+        <span>comb </span>
+    </span>
+    <span >
+        <b>Ouput On MOBILENET</b> - broom,quill pen
+        <span id="MN_name"></span>
+    </span>
+    <div id="result_div" >
+        <h4> Result - </h4>
+        <hr>
+        <h4>Goggle Lens is better.</h4>
+    </div>
+</div>
+  </ol>
+  </center>
+  <script src="main.js"></script>
+  </body>

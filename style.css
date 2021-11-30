@@ -1,0 +1,14 @@
+#head{
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Yuji Mai', serif;
+    color:floralwhite;
+  }
+  body{
+    text-align: center;
+    background-color:darkseagreen;
+  }
+  #full_div{
+      background-color: grey;
+  }
+ 
